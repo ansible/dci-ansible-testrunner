@@ -1,21 +1,5 @@
-[ovs-xenial]
-
-[platform-agnostic-vyos]
-
-[openvswitch:children]
-ovs-xenial
-
-[platform_agnostic:children]
-platform-agnostic-vyos
-
-[openvswitch:vars]
+[openvswitch-xenial:vars]
 ansible_ssh_user=ubuntu
-
-[platform-agnostic-vyos:vars]
-ansible_network_os=vyos
-ansible_ssh_user=vyos
-ansible_ssh_pass=vyos
-ansible_connection=local
 
 [vyos:vars]
 ansible_network_os=vyos
