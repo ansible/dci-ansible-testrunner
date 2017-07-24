@@ -15,13 +15,16 @@ ansible_ssh_user=ubuntu
 ansible_network_os=vyos
 ansible_ssh_user=vyos
 ansible_ssh_pass=vyos
+ansible_connection=local
 
 [vyos:vars]
 ansible_network_os=vyos
 ansible_ssh_user=vyos
 ansible_ssh_pass=vyos
+ansible_connection=local
 
 [eos:vars]
 ansible_network_os=eos
 ansible_ssh_user=admin
 ansible_ssh_pass=admin
+ansible_connection=local
