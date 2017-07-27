@@ -12,3 +12,7 @@ ansible_network_os=eos
 ansible_ssh_user=admin
 ansible_ssh_pass=admin
 ansible_connection=local
+
+[net:children]
+vyos
+eos
