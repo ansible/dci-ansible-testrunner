@@ -1,5 +1,6 @@
 [openvswitch-xenial:vars]
 ansible_ssh_user=ubuntu
+ansible_become=true
 
 [vyos:vars]
 ansible_network_os=vyos
