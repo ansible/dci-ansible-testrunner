@@ -52,5 +52,5 @@ veos-4.18.1F
 
 [net:children]
 net-vyos-1.1.7
-net-veos.4.18.1F
+net-veos-4.18.1F
 net-junos-vqfx
