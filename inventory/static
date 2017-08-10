@@ -8,7 +8,7 @@ ansible_ssh_user=vyos
 ansible_ssh_pass=vyos
 ansible_connection=local
 
-[veos-4.18.1F:vars]
+[eos-4.18.1F:vars]
 ansible_network_os=eos
 ansible_ssh_user=admin
 ansible_ssh_pass=admin
@@ -26,7 +26,7 @@ ansible_ssh_user=vyos
 ansible_ssh_pass=vyos
 ansible_connection=local
 
-[net-veos-4.18.1F:vars]
+[net-eos-4.18.1F:vars]
 ansible_network_os=eos
 ansible_ssh_user=admin
 ansible_ssh_pass=admin
@@ -48,9 +48,9 @@ junos-vqfx
 vyos-1.1.7
 
 [eos:children]
-veos-4.18.1F
+eos-4.18.1F
 
 [net:children]
 net-vyos-1.1.7
-net-veos-4.18.1F
+net-eos-4.18.1F
 net-junos-vqfx
