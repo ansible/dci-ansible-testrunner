@@ -20,6 +20,15 @@ ansible_ssh_user=root
 ansible_ssh_pass=Juniper
 ansible_connection=local
 
+[nxos-7.0.3.I5.1:vars]
+ansible_connection=local
+ansible_ssh_user=admin
+ansible_ssh_pass=admin
+ansible_ssh_port=8022
+ansible_ssh_host=localhost
+ansible_network_os=nxos
+ansible_ssh_common_args='-o PubkeyAuthentication=no -o ProxyCommand="ssh -l fedora -W %h:%p {{ inventory_hostname }}"'
+
 [net-vyos-1.1.7:vars]
 ansible_network_os=vyos
 ansible_ssh_user=vyos
@@ -49,6 +58,9 @@ vyos-1.1.7
 
 [eos:children]
 eos-4.18.1F
+
+[nxos:children]
+nxos-7.0.3.I5.1
 
 [net:children]
 net-vyos-1.1.7
