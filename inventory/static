@@ -25,9 +25,8 @@ ansible_connection=local
 ansible_ssh_user=admin
 ansible_ssh_pass=admin
 ansible_ssh_port=8022
-ansible_ssh_host=localhost
 ansible_network_os=nxos
-ansible_ssh_common_args='-o PubkeyAuthentication=no -o ProxyCommand="ssh -l fedora -W %h:%p {{ ansible_ssh_host }}"'
+ansible_ssh_common_args='-o PubkeyAuthentication=no"'
 
 [net-vyos-1.1.7:vars]
 ansible_network_os=vyos
