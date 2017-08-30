@@ -1,0 +1,5 @@
+eapi:
+  transport: eapi
+  use_ssl: no
+  port: 80
+  authorize: yes

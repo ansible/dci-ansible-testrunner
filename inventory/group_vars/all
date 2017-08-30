@@ -3,9 +3,3 @@ debug: False
 cli:
   transport: cli
   authorize: yes
-
-eapi:
-  transport: eapi
-  use_ssl: no
-  port: 80
-  authorize: yes

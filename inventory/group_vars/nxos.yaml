@@ -1,0 +1,4 @@
+nxapi:
+  transport: nxapi
+  use_ssl: no
+  port: 8080
