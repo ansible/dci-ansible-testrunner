@@ -1,3 +1,6 @@
+cli:
+  authorize: yes
+
 eapi:
   transport: eapi
   use_ssl: no
