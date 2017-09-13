@@ -1,5 +1,1 @@
 debug: False
-
-cli:
-  transport: cli
-  authorize: yes

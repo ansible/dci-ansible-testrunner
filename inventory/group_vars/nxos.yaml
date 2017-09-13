@@ -1,3 +1,6 @@
+cli:
+  transport: cli
+
 nxapi:
   transport: nxapi
   use_ssl: no
