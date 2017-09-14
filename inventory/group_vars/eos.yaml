@@ -1,4 +1,5 @@
 cli:
+  transport: cli
   authorize: yes
 
 eapi:
